@@ -379,6 +379,17 @@
             </li>
           </ul>
         </div>
+        <div class="newsletter-wrapper">
+          <h3>ZAPISZ SIĘ DO NEWSLETTERA</h3>
+          <form class="newsletter-subscription" name="sign_up_for_newsletter">
+            <input type="email" name="email" placeholder="E-mail" />
+            <button class="submit-button" type="submit">
+              Zapisz się<svg height="24px" width="24px">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -388,6 +399,35 @@
             <use href="images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form name="order_the_service">
+          <h3>Zostaw swoje dane w formularzu poniżej</h3>
+          <label>
+            Imie
+            <input class="order-input" type="name" name="username" />
+          </label>
+          <label>
+            Telefon
+            <input class="order-input" type="tel" name="phone_number" />
+          </label>
+          <label>
+            Email
+            <input class="order-input" type="email" name="email" />
+          </label>
+          <label>
+            Komentarz
+            <textarea
+              class="order-input"
+              name="feedback"
+              rows="8"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+          </label>
+          <label>
+            <input type="checkbox" name="statue" value="accept" />
+            Oświadczam iż akceptuję Regulamin i Politykę Prywatności.
+          </label>
+          <button type="submit">Wyślij</button>
+        </form>
       </div>
     </div>
     <script src="modal.js"></script>
