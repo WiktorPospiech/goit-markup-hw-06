@@ -403,14 +403,23 @@
           <h3>Zostaw swoje dane w formularzu poniżej</h3>
           <label>
             Imie
+            <svg class="modal-icons" height="12px" width="12px">
+              <use href="/images/icons.svg#icon-person-black-18dp-1"></use>
+            </svg>
             <input class="order-input" type="name" name="username" />
           </label>
           <label>
             Telefon
+            <svg class="modal-icons" height="13px" width="13px">
+              <use href="/images/icons.svg#icon-phone-black-18dp-1"></use>
+            </svg>
             <input class="order-input" type="tel" name="phone_number" />
           </label>
           <label>
             Email
+            <svg class="modal-icons" height="12px" width="15px">
+              <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+            </svg>
             <input class="order-input" type="email" name="email" />
           </label>
           <label>
@@ -422,11 +431,12 @@
               placeholder="Wprowadź tekst"
             ></textarea>
           </label>
-          <label>
+          <label class="termANDcondition">
             <input type="checkbox" name="statue" value="accept" />
-            Oświadczam iż akceptuję Regulamin i Politykę Prywatności.
+            Oświadczam iż akceptuję <a href="">Regulamin</a> i
+            <a href="">Politykę Prywatności.</a>
           </label>
-          <button type="submit">Wyślij</button>
+          <button class="modal-button" type="submit">Wyślij</button>
         </form>
       </div>
     </div>
