@@ -396,46 +396,61 @@
       <div class="modal">
         <button class="modal-close-btn" data-modal-close type="button">
           <svg width="18px" height="18px">
-            <use href="images/icons.svg#icon-close"></use>
+            <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <form name="order_the_service">
           <h3>Zostaw swoje dane w formularzu poniżej</h3>
           <label>
             Imie
-            <svg class="modal-icons" height="12px" width="12px">
-              <use href="/images/icons.svg#icon-person-black-18dp-1"></use>
-            </svg>
             <input class="order-input" type="name" name="username" />
+            <svg class="modal-icons" height="12px" width="12px">
+              <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+            </svg>
           </label>
           <label>
             Telefon
-            <svg class="modal-icons" height="13px" width="13px">
-              <use href="/images/icons.svg#icon-phone-black-18dp-1"></use>
-            </svg>
             <input class="order-input" type="tel" name="phone_number" />
+            <svg class="modal-icons" height="13px" width="13px">
+              <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+            </svg>
           </label>
           <label>
             Email
+            <input class="order-input" type="email" name="email" />
             <svg class="modal-icons" height="12px" width="15px">
               <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
             </svg>
-            <input class="order-input" type="email" name="email" />
           </label>
           <label>
             Komentarz
             <textarea
-              class="order-input"
+              class="comment"
               name="feedback"
-              rows="8"
+              rows="6"
               placeholder="Wprowadź tekst"
             ></textarea>
           </label>
-          <label class="termANDcondition">
-            <input type="checkbox" name="statue" value="accept" />
-            Oświadczam iż akceptuję <a href="">Regulamin</a> i
-            <a href="">Politykę Prywatności.</a>
-          </label>
+
+          <div class="checkbox-control">
+            <input
+              type="checkbox"
+              name="check"
+              id="check"
+              value="1"
+              class="checkbox-input"
+            />
+            <label for="check" class="termANDcondition">
+              <svg width="11px" height="8px">
+                <use href="./images/icons.svg#icon-Vector"></use>
+              </svg>
+            </label>
+            <p>
+              Oświadczam iż akceptuję <a href="">Regulamin</a> i
+              <a href="">Politykę Prywatności.</a>
+            </p>
+          </div>
+
           <button class="modal-button" type="submit">Wyślij</button>
         </form>
       </div>
