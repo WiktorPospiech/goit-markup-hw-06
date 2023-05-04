@@ -46,6 +46,7 @@ nav,
 .aboutus-list,
 .portfolio-categories {
   display: flex;
+  justify-content: space-between;
 }
 .header-section {
   padding-top: 24px;
@@ -269,7 +270,7 @@ nav,
 }
 .clients-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   fill: #afb1b8;
   gap: 30px;
 }
@@ -552,10 +553,12 @@ label {
 .comment:hover,
 .comment:focus-within {
   border: 1px solid var(--brand-color);
+  outline: none;
 }
 .order-input:hover + .modal-icons,
 .order-input:focus + .modal-icons {
   fill: var(--brand-color);
+  outline: none;
 }
 
 .modal label,
@@ -607,6 +610,9 @@ label {
   border-radius: 2px;
   overflow: hidden;
   position: relative;
+}
+.order-input svg {
+  display: block;
 }
 .checkbox-input:checked + .termANDcondition {
   border-color: var(--brand-color);
